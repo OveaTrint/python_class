@@ -1,6 +1,6 @@
 name = 'Kamal Baiyewu'
 print(f'Hello {name} ')
-def number(num1,num2):
-    add = num1 + num2
+def number(**num):
+    add = num['num1'] + num['num2'] + num['num3']
     print(add)
-number(1,4)
+number(num1 = 1, num2 = 3, num3 = 4)
